@@ -105,7 +105,7 @@ async function postDevlogDiscord( data ) {
 	const logoDiscord = "https://devlog.zgrajsie.com/assets/img/logoDiscord.png";
 	const logoZgrajSie = "https://devlog.zgrajsie.com/assets/img/logoZgrajSie.png";
 	const emojiLaptop = "https://devlog.zgrajsie.com/assets/img/emojiLaptop.png";
-	const webhook = "https://discord.com/api/webhooks/953736901809041419/JArGUyUlHmwiz_pW-efsFaWp31ckjcwBeOcTQLhfvAJ2WqPzag88uudy1bprU8J9rPv_";
+	const webhook = "WEBHOOK URL";
     const params = {
         method: "post",
         headers: {
