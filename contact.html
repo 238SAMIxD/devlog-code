@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact - Welcome to the University: Student's Revenge</title>
+	<meta name="twitter:description" content="Devlog of the horror/hacking game that is being created in Unity.">
+    <meta name="twitter:title" content="Game Devlog Blog">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="Devlog of the horror/hacking game that is being created in Unity.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/logoFull.png">
+    <meta name="twitter:image" content="assets/img/logoFull.png">
+    <meta property="og:title" content="Game Devlog Blog">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/logo180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/logo180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/logo192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/logo512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a96d3be9e1.js" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="index.html">Welcome to the University: Student's Revenge</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('assets/img/contact-bg.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto position-relative">
+                    <div class="site-heading">
+                        <h1>Contact Me</h1><span class="subheading">Have questions or suggestions? Feel free to contact me!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+                <p>The best way to communicate is joining my Discord server (link in the footer) but you can still use this form.</p>
+                <form id="contactForm" name="sentMessage" novalidate="novalidate" action="assets/php/contact.php" method="post">
+                    <div class="control-group">
+                        <div class="form-floating controls mb-3"><select class="form-select" name="subject">
+                                <option value="q" selected>Question</option>
+                                <option value="s">Suggestion</option>
+                            </select><label class="form-label" for="name">Subject</label><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-floating controls mb-3"><input class="form-control" type="text" id="name-1" required placeholder="Name" name="name"><label class="form-label" for="name">Name</label><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-floating controls mb-3"><input class="form-control" type="email" id="email" required placeholder="Email Address" name="email"><label class="form-label">Email Address</label><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-floating controls mb-3"><textarea class="form-control" id="message" data-validation-required-message="Please enter a message." required placeholder="Message" style="height: 150px;" name="message"></textarea><label class="form-label">Message</label><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div id="success"></div>
+                    <div class="mb-3"><button class="btn btn-primary" id="sendMessageButton" type="submit">Send</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="https://github.com/238samixd" target="blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li class="list-inline-item"><a href="https://twitch.tv/238samixd" target="blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-twitch fa-stack-1x fa-inverse"></i></span></a></li>
+						<li class="list-inline-item"><a href="https://discord.gg/UsjDgSw9uA" target="blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-discord fa-stack-1x fa-inverse"></i></span></a></li>
+                    </ul>
+                    <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Welcome to the University: Student's Revenge 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

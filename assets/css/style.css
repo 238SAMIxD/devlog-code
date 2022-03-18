@@ -1,0 +1,47 @@
+.navbar-brand {
+  overflow-wrap: break-word !important;
+}
+
+#message {
+  min-height: 50px;
+}
+
+.result {
+  display: none;
+}
+
+.post time {
+  color: #3e464e;
+}
+
+.post-placeholder > a > h2, .post-placeholder > a > h3, .post-placeholder > p > a, .post-placeholder > p > time, .post-placeholder > p > span, .post-placeholder > a > h2::selection, .post-placeholder > a > h3::selection, .post-placeholder > p > a::selection, .post-placeholder > p > time::selection, .post-placeholder > p > span::selection {
+  color: transparent !important;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholder;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 200% 100%;
+  position: relative;
+}
+
+@keyframes placeholder {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.post-heading {
+  background-color: #0007;
+  padding: 0 !important;
+  margin: 200px 0;
+}
+
