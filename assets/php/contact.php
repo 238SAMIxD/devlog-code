@@ -7,7 +7,7 @@
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	
-	$to = "238SAMIxD <samijedrzejewski@gmail.com>";
+	$to = "238SAMIxD <EMAIL>";
 	$subject = "Devlog contact - $sub";
 	$message = $_POST['message'];
 	$headers = "From: $name <$email> \r\n";
@@ -17,7 +17,7 @@
 	
 	mail( $to, $subject, $message, $headers );
 	
-	$webhookurl = "https://discord.com/api/webhooks/954404085325504542/jcK6jN6BYhj-sU7Y8LOx1RvkuNYO5y3RBJaw0V1BVW5Oslo-p9Ed7iqk9UGU54Gwtizi";
+	$webhookurl = "WEBHOOK URL";
 
 	$timestamp = date("c", strtotime("now"));
 
